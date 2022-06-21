@@ -1,0 +1,105 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  
+}
+
+@font-face {
+  font-family: 'stranger';
+  src: url(fonts/stranger.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'high';
+  src: url(fonts/high.ttf) format('truetype');
+}
+
+body{
+  font-family: sans-serif;
+  background: black url('assets/dexter03.jpg') center center no-repeat fixed;
+  background-size: cover;
+}
+
+.container{
+  background-color: rgba(0, 0, 0, 0.808);
+  width: 60%;
+  margin: 4rem auto;
+  border-radius: 1rem;
+  color: #ffffff;
+}
+
+
+
+.container__img{
+  width: 200px;
+  margin: 150px 20px 0px 70px;
+
+}
+
+.container p{
+  padding: 20px 40px 0px 40px;
+  text-align: justify;
+  font-size: 1.2rem;
+}
+
+.container h2{
+  text-align: center;
+  margin: 30px;
+  font-family: 'stranger';
+  font-size: 75px;
+  font-weight: normal;
+  color: #f33434;
+  line-height: 0.8;
+}
+
+#titulo{
+  margin-inline: 50px;
+  font-family: 'high';
+  font-size: 1.2rem;
+
+
+}
+
+.alternativa{
+  line-height: 2;
+  padding: 0px 55px;
+  cursor: context-menu;
+}
+
+.alternativa:nth-child(1){
+  padding-top: 20px;
+}
+
+.alternativa:nth-child(4){
+  padding-bottom: 50px;
+}
+
+.pontos {
+  display: flex;
+  justify-content: center;
+}
+
+.pontos button{
+  background: #f33434;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  margin-block: 20px;
+  padding: 10px;
+}
+
+
+/*Media Query*/
+
+@media (max-width: 763px){
+  .container{
+    width: 400px;
+  }
+
+  .button{
+    margin-left: 50%;
+  }
+}
